@@ -11,10 +11,11 @@
     {{/if}}
 
     <div class="settings__file-buttons">
+        <!-- TODO #1 mudar p/ parte de baixo da tela
         <button class="settings__file-button-save-default" {{#if syncing}}disabled{{/if}}>
             {{#ifeq storage 'file'}}{{res 'setFileSave'}}{{/ifeq}}
             {{#ifneq storage 'file'}}{{res 'setFileSyncVerb'}}{{/ifneq}}
-        </button>
+        </button> -->
         {{#if canSaveTo}}
             <button class="settings__file-button-save-choose btn-silent"
                 {{#if syncing}}disabled{{/if}}>{{res 'setFileSaveTo'}}</button>
@@ -202,4 +203,10 @@
 
     <label for="settings__file-key-change-force">{{res 'setFileKeyChangeForce'}}:</label>
     <input type="text" pattern="\d*" class="settings__input input-base" id="settings__file-key-change-force" value="{{keyChangeForce}}" maxlength="6" />
+
+    <!-- TODO #1 mudar p/ parte de baixo da tela -->
+    <button class="settings__file-button-save-default" {{#if syncing}}disabled{{/if}}>
+        {{#ifeq storage 'file'}}{{res 'setFileSave'}}{{/ifeq}}
+        {{#ifneq storage 'file'}}{{res 'setFileSyncVerb'}}{{/ifneq}}
+    </button>
 </div>

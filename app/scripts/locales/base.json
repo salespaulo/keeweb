@@ -499,7 +499,7 @@
   "setFileSaveTo": "Save to …",
   "setFileClose": "Close",
   "setFileSync": "Sync",
-  "setFileSyncVerb": "Sync",
+  "setFileSyncVerb": "Save",
   "setFileSaveToXml": "XML",
   "setFileSaveToHtml": "HTML",
   "setFileLastSync": "Last sync",
